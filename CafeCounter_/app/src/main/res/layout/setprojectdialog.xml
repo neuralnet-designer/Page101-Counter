@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 합계"/>
+
+            <ListView
+                android:id="@+id/order_amount_list"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"></ListView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 결제금액"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textStyle="bold"
+                android:text="18000 원"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/button_call"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="호 출"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        />
+                    <Button
+                        android:id="@+id/button_end"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="음료 완료"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/button_cancel"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="주문 취소"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"/>
+                    <Button
+                        android:id="@+id/button_close"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="닫 기"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주문 목록"/>
+        <ListView
+            android:id="@+id/order_detail_list"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"></ListView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

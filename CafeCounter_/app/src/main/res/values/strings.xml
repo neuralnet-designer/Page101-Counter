@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">COFFEE PAGE 101</string>
+    <string name="title_section1">주문</string>
+    <string name="title_section2">이벤트관리</string>
+    <string name="title_section3">건의사항</string>
+    <string name="title_section4">메뉴관리</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
